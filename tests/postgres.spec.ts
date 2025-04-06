@@ -80,7 +80,7 @@ test("Update and validate facility initialoutlay", async () => {
   expect(typeof row.initialoutlay).toBe("string");
 });
 
-test("Update and validate member", async () => {
+test("Delete and validate member", async () => {
   const selectResponse = await client.query(
     "SELECT * FROM cd.members WHERE memid = 37;"
   );
